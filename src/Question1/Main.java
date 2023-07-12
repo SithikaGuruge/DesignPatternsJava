@@ -70,7 +70,7 @@ class Cooker2 implements Runnable {
         while (true) {
             synchronized (obj) {
                 if (obj.getCount() < 3 && !obj.isCookingDone()) {
-                    System.out.println("Cooked popcorn " + obj.getCount());
+                    System.out.println("Cooked popcorn__" + obj.getCount());
                     obj.setCount(obj.getCount() + 1);
                 } else {
                     obj.setCookingDone(true);
